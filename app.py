@@ -542,8 +542,6 @@ with gr.Blocks(title="AI vs Human Text Classifier") as demo:
             ],
             [
                 "This is a simple example text to demonstrate the functionality of the AI vs Human Text Classifier."
-                " It contains a mix of common words and some transition phrases. The purpose is to test "
-                "whether the model can correctly identify it as human-written or AI-generated based on the extracted features."
             ],
         ],
         inputs=[text_input],
