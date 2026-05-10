@@ -4,7 +4,8 @@ on:
   push:
     branches: [main]
     paths:
-      - "app/**"
+      - "app.py"
+      - "requirements.txt"
       - ".github/workflows/deploy.yml"
 
 jobs:
@@ -21,9 +22,8 @@ jobs:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
-          source: "app/app.py,app/requirements.txt"
+          source: "app.py,requirements.txt"
           target: /home/kusay/ai-detecter/
-          strip_components: 1
 
       - name: Install dependencies & restart service
         uses: appleboy/ssh-action@v1.0.3
