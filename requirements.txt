@@ -1,0 +1,9 @@
+# Minimal runtime dependencies for the Gradio inference app.
+# Install from within the app folder:
+#   pip install -r requirements.txt
+
+gradio
+numpy
+pandas
+scikit-learn
+joblib
