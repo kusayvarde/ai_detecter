@@ -1,9 +1,18 @@
-# Minimal runtime dependencies for the Gradio inference app.
-# Install from within the app folder:
-#   pip install -r requirements.txt
+# Runtime dependencies for the Gradio inference app.
+# Install: pip install -r requirements.txt
 
 gradio
 numpy
 pandas
 scikit-learn
 joblib
+
+# NLP
+nltk
+textstat
+textblob
+pyspellchecker
+
+# GPT-2 perplexity
+torch
+transformers
